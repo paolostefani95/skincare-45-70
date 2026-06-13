@@ -3,63 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Routine viso mattina e sera 45–60 anni: la base minima che funziona</title>
   <meta name="description" content="Una routine viso semplice per donne 45–60: pochi passaggi chiari, prodotti essenziali e niente fronzoli." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
-      color: #222;
+      color: #22211d;
       background: #faf7f4;
     }
-    a { color: #01696f; text-decoration: none; }
+    a { color: #0e6b6f; text-decoration: none; }
     a:hover { text-decoration: underline; }
     header {
-      background: #f5ebe1;
+      background: #f6ebe1;
       border-bottom: 1px solid #e0d5ca;
       box-shadow: 0 8px 18px rgba(0,0,0,0.03);
     }
     .header-inner {
       max-width: 960px;
       margin: 0 auto;
-      padding: 1.4rem 1rem 1.1rem;
+      padding: 1.2rem 1rem 1rem;
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
       gap: 1.5rem;
     }
+    .brand-block { display: flex; flex-direction: column; gap: 0.15rem; }
     .logo {
-      font-weight: 700;
-      font-size: 1.2rem;
-      letter-spacing: 0.03em;
+      font-family: "Playfair Display", "Times New Roman", serif;
+      font-weight: 600;
+      font-size: 1.4rem;
+      letter-spacing: 0.04em;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.35rem;
     }
-    .back {
-      font-size: 0.9rem;
+    .logo-mark {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #0e6b6f, #35a39d);
+      display: inline-block;
     }
+    .tagline {
+      color: #5d574f;
+      font-size: 0.85rem;
+    }
+    .tagline span { color: #0e6b6f; font-weight: 500; }
+    .back { font-size: 0.9rem; }
+
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 2.2rem 1rem 3rem;
     }
     main h1 {
+      font-family: "Playfair Display", "Times New Roman", serif;
       font-size: clamp(1.9rem, 2.3vw + 1.3rem, 2.3rem);
       margin-bottom: 0.5rem;
     }
-    .meta {
-      font-size: 0.9rem;
-      color: #777;
-      margin-bottom: 1.5rem;
-    }
+    .meta { font-size: 0.9rem; color: #777; margin-bottom: 1.5rem; }
     p { margin-bottom: 1rem; }
-    h2 {
-      font-size: 1.25rem;
-      margin: 1.5rem 0 0.75rem;
-    }
-    h3 {
-      font-size: 1.05rem;
-      margin: 1.25rem 0 0.5rem;
-    }
+    h2 { font-size: 1.25rem; margin: 1.5rem 0 0.75rem; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; }
     ul { margin: 0.5rem 0 1rem 1.25rem; }
     li { margin-bottom: 0.35rem; }
     .box {
@@ -69,16 +79,16 @@
       padding: 1rem 1.25rem;
       margin: 1rem 0 1.5rem;
     }
-    .disclaimer {
-      font-size: 0.85rem;
-      color: #777;
-    }
+    .disclaimer { font-size: 0.85rem; color: #777; }
   </style>
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="logo">Skincare 45–70</div>
+      <div class="brand-block">
+        <div class="logo"><span class="logo-mark"></span><span>Pelle Serena</span></div>
+        <p class="tagline"><span>Skincare 45–70</span> spiegata senza giri di parole.</p>
+      </div>
       <div class="back"><a href="index.html">← Torna alla homepage</a></div>
     </div>
   </header>

@@ -16,14 +16,18 @@
     a { color: #01696f; text-decoration: none; }
     a:hover { text-decoration: underline; }
     header {
-      background: #f1e7dd;
+      background: #f5ebe1;
       border-bottom: 1px solid #e0d5ca;
-      padding: 1.25rem 1rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.03);
     }
-    .container {
-      max-width: 900px;
+    .header-inner {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
+      padding: 1.4rem 1rem 1.1rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1.5rem;
     }
     .logo {
       font-weight: 700;
@@ -32,10 +36,14 @@
     }
     .back {
       font-size: 0.9rem;
-      margin-top: 0.35rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.2rem 1rem 3rem;
     }
     main h1 {
-      font-size: clamp(1.7rem, 2.2vw + 1.3rem, 2.2rem);
+      font-size: clamp(1.9rem, 2.3vw + 1.3rem, 2.3rem);
       margin-bottom: 0.5rem;
     }
     .meta {
@@ -69,7 +77,7 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="header-inner">
       <div class="logo">Skincare 45–70</div>
       <div class="back"><a href="index.html">← Torna alla homepage</a></div>
     </div>
@@ -80,13 +88,16 @@
     <p class="meta">Guida pratica · Lettura 7 minuti</p>
 
     <p>
-      Dopo i 45 anni la pelle cambia: può diventare più secca, meno elastica e comparire qualche ruga in più. Questo non significa che servano dieci prodotti diversi o routine complicate. Anzi: spesso bastano pochi passaggi fatti con costanza.
+      Dopo i 45 anni la pelle inizia a chiedere qualcosina in più. Può diventare più secca, meno elastica e compaiono quelle linee sottili che fino a qualche anno fa non c'erano. La buona notizia? Non serve riempire il bagno di prodotti o passare mezz'ora davanti allo specchio.
+    </p>
+    <p>
+      In questa guida trovi una routine essenziale, divisa tra mattina e sera, pensata per chi vuole risultati realistici senza complicarsi la vita. Pochi passaggi, spiegati bene, che puoi adattare alla tua pelle e al tuo tempo.
     </p>
 
     <div class="box">
       <h2>La regola d'oro</h2>
       <p>
-        Meglio una routine con 3–4 step semplici, che riesci a fare tutti i giorni, piuttosto che una perfetta sulla carta ma impossibile da seguire.
+        Meglio una routine con 3–4 step semplici, che riesci a fare tutti i giorni, piuttosto che un piano perfetto sulla carta ma impossibile da seguire. La costanza batte sempre il prodotto “miracoloso”.
       </p>
     </div>
 
@@ -94,37 +105,37 @@
 
     <h3>1. Detergente delicato</h3>
     <p>
-      Al mattino non serve “sgrassare” la pelle: è sufficiente un detergente delicato che rimuove sebo, sudore e residui della notte senza lasciare la pelle che tira.
+      Al mattino la pelle non è “sporca”, ma ha bisogno di una rinfrescata: sebo, sudore, eventuali prodotti della sera. L'obiettivo non è sgrassare, ma pulire senza togliere tutta l’idratazione naturale.
     </p>
     <ul>
-      <li>Preferisci texture in latte o gel cremoso.</li>
-      <li>Evita prodotti molto schiumogeni se dopo senti la pelle secca.</li>
-      <li>Massaggia per 20–30 secondi e risciacqua con acqua tiepida, non bollente.</li>
+      <li>Scegli un detergente in latte o gel cremoso, formulato per pelli normali o secche.</li>
+      <li>Evita i prodotti molto schiumogeni: spesso lasciano quella sensazione di pelle che tira.</li>
+      <li>Massaggia per 20–30 secondi e risciacqua con acqua tiepida, mai troppo calda.</li>
     </ul>
 
     <h3>2. Siero leggero idratante</h3>
     <p>
-      Un siero con ingredienti idratanti (come acido ialuronico o glicerina) aiuta a trattenere l'acqua nella pelle e prepara il viso alla crema.
+      Un buon siero idratante è come un bicchiere d'acqua in più per la pelle. Ingredienti come acido ialuronico e glicerina aiutano a trattenere l’acqua e a far funzionare meglio la crema che metterai dopo.
     </p>
     <ul>
       <li>Applica poche gocce a pelle ancora leggermente umida dopo il detergente.</li>
-      <li>Picchietta con le dita invece di strofinare.</li>
+      <li>Picchietta con le dita, senza strofinare: bastano pochi secondi.</li>
     </ul>
 
     <h3>3. Crema giorno con protezione solare</h3>
     <p>
-      Il passaggio più importante per prevenire nuove rughe e macchie è usare ogni giorno una crema con filtro solare adatto al viso.
+      Questo è lo step che fa davvero la differenza nel lungo periodo. Il sole è uno dei principali responsabili di rughe e macchie, anche quando è nascosto tra le nuvole.
     </p>
     <ul>
-      <li>Cerca una crema con SPF almeno 30, adatta al tuo tipo di pelle.</li>
-      <li>Applicala su viso, collo e – se scoperti – anche décolleté e dorso delle mani.</li>
+      <li>Cerca una crema con SPF almeno 30, formulata per l’uso quotidiano sul viso.</li>
+      <li>Stendila su viso, collo e – se scoperti – anche décolleté e dorso delle mani.</li>
       <li>Se passi molte ore all'aperto, valuta di riapplicarla nel corso della giornata.</li>
     </ul>
 
     <div class="box">
       <h3>Idee di prodotti da valutare</h3>
       <p>
-        In molti casi puoi partire con prodotti reperibili facilmente in farmacia, profumeria o online. Nelle prossime guide vedremo esempi concreti e come leggere le etichette per capire se un prodotto fa al caso tuo.
+        Per iniziare non servono marchi di lusso. Spesso bastano detergenti delicati, un siero idratante semplice e una buona crema con SPF che puoi trovare in farmacia, profumeria o online. Nei prossimi articoli vedremo esempi concreti e come leggere le etichette.
       </p>
     </div>
 
@@ -132,48 +143,48 @@
 
     <h3>1. Doppia detersione “intelligente” (se ti trucchi)</h3>
     <p>
-      Se usi trucco o protezione solare tutti i giorni, la sera è utile una doppia detersione leggera:
+      La sera la pelle porta addosso trucco, protezione solare, smog, sudore. Qui la pulizia fa metà del lavoro. Se usi trucco tutti i giorni, la doppia detersione è un’ottima idea.
     </p>
     <ul>
       <li><strong>Primo passo:</strong> un prodotto oleoso o latte detergente per sciogliere trucco e filtro solare.</li>
-      <li><strong>Secondo passo:</strong> un detergente delicato simile a quello del mattino per rimuovere i residui.</li>
+      <li><strong>Secondo passo:</strong> lo stesso detergente delicato del mattino per rimuovere i residui.</li>
     </ul>
     <p>
-      Se non ti trucchi quasi mai, puoi usare direttamente il detergente delicato anche la sera.
+      Se ti trucchi poco o niente, puoi usare solo il detergente delicato, facendo però attenzione a massaggiare bene tutto il viso.
     </p>
 
     <h3>2. Trattamento mirato (opzionale)</h3>
     <p>
-      Qui puoi inserire, se vuoi, un prodotto con ingredienti più “attivi”, come un siero con retinolo delicato o acidi esfolianti leggeri. Sono prodotti utili, ma vanno introdotti con calma:
+      Questo è lo step “bonus” in cui, se vuoi, puoi inserire un siero più attivo: per esempio un retinolo delicato o un esfoliante chimico leggero. Sono strumenti utili, ma non obbligatori, e vanno introdotti con calma.
     </p>
     <ul>
-      <li>Parti usando il prodotto 1–2 volte a settimana.</li>
-      <li>Osserva come reagisce la pelle (rossore, secchezza, bruciore).</li>
-      <li>Se tutto va bene, aumenta gradualmente la frequenza.</li>
+      <li>Inizia usandoli 1–2 volte a settimana, mai tutte le sere subito.</li>
+      <li>Osserva come reagisce la pelle: se compaiono rossore forte o bruciore, fai una pausa.</li>
+      <li>Se tutto fila liscio, puoi aumentare la frequenza lentamente.</li>
     </ul>
 
     <h3>3. Crema notte più nutriente</h3>
     <p>
-      Di sera la pelle sopporta volentieri texture un po' più ricche. Una crema notte più corposa aiuta a ridurre la sensazione di pelle che tira al mattino.
+      Di sera la pelle è più ricettiva e sopporta meglio texture un po’ più ricche. Una crema notte leggermente più nutriente aiuta a ridurre la sensazione di pelle che tira al mattino.
     </p>
     <ul>
-      <li>Se al mattino la pelle è ancora lucida e pesante, la crema è troppo ricca per te.</li>
-      <li>Se invece ti svegli con pelle che tira, puoi valutare formule più nutriente.</li>
+      <li>Se al risveglio la pelle è lucida e “pesante”, la crema è troppo corposa per te.</li>
+      <li>Se al contrario senti ancora secchezza, puoi valutare formule più ricche o aggiungere qualche goccia di olio viso.</li>
     </ul>
 
     <h2>Ogni quanto vedere risultati?</h2>
     <p>
-      Con una routine essenziale e costante, di solito in 4–6 settimane la pelle appare già più uniforme e meno secca. Le rughe profonde non spariscono, ma l'aspetto generale può migliorare molto.
+      Con una routine essenziale e costante, di solito in 4–6 settimane la pelle appare già più uniforme e meno secca. Le rughe profonde non spariscono – sarebbe poco onesto prometterlo – ma l’aspetto generale può migliorare molto.
     </p>
 
     <div class="box disclaimer">
       <p>
-        Nota importante: ogni pelle è diversa. Se hai problemi specifici (macchie marcate, rosacea, dermatiti, allergie), parla sempre con il tuo medico o dermatologo prima di introdurre nuovi prodotti.
+        Nota importante: ogni pelle è diversa. Se hai problemi specifici (macchie marcate, rosacea, dermatiti, allergie), parla sempre con il tuo medico o dermatologo prima di introdurre nuovi prodotti o attivi più forti.
       </p>
     </div>
 
     <p>
-      Nei prossimi articoli vedremo insieme come scegliere concretamente i prodotti, con esempi di detergenti, sieri e creme che puoi valutare in base al tuo budget.
+      Se questa routine ti sembra gestibile, hai già fatto il passo più difficile. Nei prossimi articoli vedremo insieme come scegliere concretamente i prodotti, con esempi di detergenti, sieri e creme che puoi valutare in base al tuo budget.
     </p>
   </main>
 </body>

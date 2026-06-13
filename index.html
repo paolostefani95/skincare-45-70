@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skincare 45–70 - Pelle semplice, risultati reali</title>
-  <meta name="description" content="Consigli pratici di skincare per donne 45–70: routine facili, prodotti essenziali e zero fronzoli." />
+  <meta name="description" content="Consigli pratici di skincare per donne 45–70: routine facili, prodotti essenziali e spiegazioni in italiano chiaro." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -16,49 +16,86 @@
     a { color: #01696f; text-decoration: none; }
     a:hover { text-decoration: underline; }
     header {
-      background: #f1e7dd;
+      background: #f5ebe1;
       border-bottom: 1px solid #e0d5ca;
-      padding: 1.5rem 1rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.03);
     }
-    .container {
-      max-width: 900px;
+    .header-inner {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
+      padding: 1.4rem 1rem 1.1rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1.5rem;
     }
     .logo {
       font-weight: 700;
-      font-size: 1.4rem;
-      letter-spacing: 0.03em;
+      font-size: 1.25rem;
+      letter-spacing: 0.04em;
     }
     .tagline {
-      margin-top: 0.25rem;
+      margin-top: 0.15rem;
       color: #555;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
+    .nav-mini {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .nav-mini a { margin-left: 0.75rem; }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 3rem;
+    }
+
     .hero {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
     }
-    .hero h1 {
-      font-size: clamp(1.9rem, 2.4vw + 1.4rem, 2.5rem);
-      margin-bottom: 0.75rem;
-    }
-    .hero p {
-      max-width: 40rem;
-      color: #444;
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
     }
     .pill {
       display: inline-block;
       background: #01696f;
       color: #fff;
       border-radius: 999px;
-      padding: 0.25rem 0.75rem;
+      padding: 0.25rem 0.9rem;
       font-size: 0.8rem;
       font-weight: 600;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      margin-bottom: 0.9rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 2.5vw + 1.4rem, 2.7rem);
       margin-bottom: 0.75rem;
     }
+    .hero p {
+      max-width: 40rem;
+      color: #444;
+      font-size: 0.98rem;
+    }
+    .hero-img-wrapper {
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      background: #e7ded4;
+    }
+    .hero-img-wrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -67,9 +104,9 @@
     }
     .card {
       background: #fff;
-      border-radius: 0.75rem;
+      border-radius: 0.85rem;
       border: 1px solid #ebdfd2;
-      padding: 1.25rem 1.25rem 1.5rem;
+      padding: 1.25rem 1.3rem 1.4rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.03);
     }
     .card h2 {
@@ -91,6 +128,25 @@
       font-size: 0.9rem;
       font-weight: 600;
     }
+    .card-primary { border-color: #d4e6e4; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1.1rem;
+      border-radius: 999px;
+      background: #01696f;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      margin-top: 0.35rem;
+    }
+    .btn-primary span { margin-left: 0.35rem; }
+    .btn-primary:hover { background: #0c4e54; text-decoration: none; }
+
     footer {
       border-top: 1px solid #e0d5ca;
       padding: 1.5rem 1rem 2rem;
@@ -102,50 +158,69 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="logo">Skincare 45–70</div>
-      <p class="tagline">Routine semplici, prodotti essenziali, niente promesse miracolose.</p>
+    <div class="header-inner">
+      <div>
+        <div class="logo">Skincare 45–70</div>
+        <p class="tagline">Routine semplici, prodotti essenziali, niente promesse miracolose.</p>
+      </div>
+      <nav class="nav-mini" aria-label="Navigazione rapida">
+        <a href="#articoli">Articoli</a>
+      </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <span class="pill">Inizia da qui</span>
-      <h1>Prenderti cura della pelle non deve essere complicato</h1>
-      <p>
-        Questo sito raccoglie consigli pratici di skincare per donne dai 45 ai 70 anni.
-        Routine brevi, prodotti essenziali e spiegazioni in italiano chiaro, così puoi scegliere con calma cosa fa davvero al caso tuo.
-      </p>
+      <div>
+        <span class="pill">Inizia da qui</span>
+        <h1>Prendersi cura della pelle può essere semplice</h1>
+        <p>
+          Qui trovi consigli pratici di skincare pensati per donne dai 45 ai 70 anni. Niente linguaggio complicato o routine infinite: solo pochi passaggi chiari, spiegati in italiano normale, per scegliere cosa usare mattina e sera senza perdere tempo.
+        </p>
+        <a class="btn-primary" href="articolo-1-routine-45-60.html">Leggi subito la routine base<span>→</span></a>
+      </div>
+      <div class="hero-img-wrapper">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/52fe8f94-3f6d-4cad-90ec-cf7409afddf1.png" alt="Donna sui 50 anni che applica serenamente una crema viso vicino a una finestra" loading="lazy" />
+      </div>
     </section>
 
-    <section>
+    <section id="articoli">
       <h2>Articoli consigliati per iniziare</h2>
       <div class="grid">
-        <article class="card">
+        <article class="card card-primary">
           <span class="meta">Guida pratica · Lettura 7 minuti</span>
           <h2>Routine viso mattina e sera 45–60 anni: la base minima che funziona</h2>
           <p>
-            Niente dieci passaggi e prodotti inutili: una routine essenziale con pochi step chiari che puoi seguire ogni giorno.
+            Dimentica i dieci passaggi e i prodotti che finiscono in un cassetto. Qui trovi una routine essenziale, con pochi step che puoi davvero seguire tutti i giorni.
           </p>
           <a class="more" href="articolo-1-routine-45-60.html">Leggi la guida completa →</a>
         </article>
 
         <article class="card">
-          <span class="meta">In arrivo</span>
+          <span class="meta">Focus ingredienti · Lettura 8 minuti</span>
           <h2>Ingredienti da cercare (e da evitare) dopo i 50 anni</h2>
           <p>
-            Acido ialuronico, retinolo, vitamina C: cosa fanno davvero e come capire se vale la pena provarli.
+            Acido ialuronico, retinolo, vitamina C, niacinamide: cosa fanno davvero, come inserirli nella routine e quando non ha senso usarli.
           </p>
-          <a class="more" href="#">Disponibile a breve</a>
+          <a class="more" href="articolo-2-ingredienti-dopo-50.html">Scopri gli ingredienti chiave →</a>
         </article>
 
         <article class="card">
-          <span class="meta">In arrivo</span>
-          <h2>Creme giorno con protezione solare: perché sono il primo “antiage”</h2>
+          <span class="meta">Guida scelta prodotti · Lettura 6 minuti</span>
+          <h2>Creme giorno con protezione solare: il tuo primo "antiage"</h2>
           <p>
-            Il sole è una delle principali cause di rughe e macchie: meglio scegliere bene la crema che usi ogni mattina.
+            Il sole è tra i principali responsabili di rughe e macchie. Vediamo come scegliere una buona crema con SPF che useresti davvero ogni mattina.
           </p>
-          <a class="more" href="#">Disponibile a breve</a>
+          <a class="more" href="articolo-3-creme-con-spf.html">Come scegliere la crema giusta →</a>
+        </article>
+
+        <article class="card">
+          <span class="meta">Routine pronte · Lettura 5 minuti</span>
+          <h2>3 routine pronte: budget, essenziale, coccola</h2>
+          <p>
+            Tre esempi di routine complete con numero diverso di prodotti, pensate per esigenze e budget diversi: scegli quella che ti assomiglia di più.
+          </p>
+          <a class="more" href="articolo-4-tre-routine-pronte.html">Vedi le routine esempio →</a>
         </article>
       </div>
     </section>

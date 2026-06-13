@@ -33,11 +33,7 @@
       justify-content: space-between;
       gap: 1.5rem;
     }
-    .brand-block {
-      display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
-    }
+    .brand-block { display: flex; flex-direction: column; gap: 0.15rem; }
     .logo {
       font-family: "Playfair Display", "Times New Roman", serif;
       font-weight: 600;
@@ -48,32 +44,16 @@
       gap: 0.35rem;
     }
     .logo-mark {
-      width: 22px;
-      height: 22px;
+      width: 22px; height: 22px;
       border-radius: 999px;
       background: linear-gradient(135deg, #0e6b6f, #35a39d);
       display: inline-block;
     }
-    .tagline {
-      color: #5d574f;
-      font-size: 0.9rem;
-    }
-    .tagline span {
-      font-weight: 500;
-      color: #0e6b6f;
-    }
-    .nav-mini {
-      font-size: 0.9rem;
-      color: #666;
-    }
+    .tagline { color: #5d574f; font-size: 0.9rem; }
+    .tagline span { font-weight: 500; color: #0e6b6f; }
+    .nav-mini { font-size: 0.9rem; color: #666; }
     .nav-mini a { margin-left: 0.75rem; }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2.4rem 1rem 3rem;
-    }
-
+    .container { max-width: 960px; margin: 0 auto; padding: 2.4rem 1rem 3rem; }
     .hero {
       display: grid;
       grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
@@ -81,11 +61,7 @@
       align-items: center;
       margin-bottom: 2.8rem;
     }
-    @media (max-width: 800px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-    }
+    @media (max-width: 800px) { .hero { grid-template-columns: 1fr; } }
     .pill {
       display: inline-block;
       background: #0e6b6f;
@@ -103,11 +79,7 @@
       font-size: clamp(2.1rem, 2.6vw + 1.4rem, 2.9rem);
       margin-bottom: 0.8rem;
     }
-    .hero p {
-      max-width: 40rem;
-      color: #433f38;
-      font-size: 0.98rem;
-    }
+    .hero p { max-width: 40rem; color: #433f38; font-size: 0.98rem; }
     .hero p + p { margin-top: 0.5rem; }
     .hero-img-wrapper {
       border-radius: 1.25rem;
@@ -115,12 +87,7 @@
       box-shadow: 0 18px 40px rgba(0,0,0,0.12);
       background: #e7ded4;
     }
-    .hero-img-wrapper img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
+    .hero-img-wrapper img { display: block; width: 100%; height: auto; }
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -137,7 +104,7 @@
     }
     .btn-primary span { margin-left: 0.35rem; }
     .btn-primary:hover { background: #0a5053; text-decoration: none; }
-
+    .section-title { font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; color: #22211d; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -151,27 +118,12 @@
       padding: 1.25rem 1.3rem 1.4rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.03);
     }
-    .card h2 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 0.75rem;
-    }
-    .card span.meta {
-      display: block;
-      font-size: 0.8rem;
-      color: #777;
-      margin-bottom: 0.5rem;
-    }
-    .card a.more {
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
+    .card h2 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.93rem; color: #555; margin-bottom: 0.75rem; }
+    .card span.meta { display: block; font-size: 0.78rem; color: #777; margin-bottom: 0.4rem; }
+    .card span.autrice { display: block; font-size: 0.78rem; color: #0e6b6f; font-weight: 500; margin-bottom: 0.5rem; }
+    .card a.more { font-size: 0.88rem; font-weight: 600; }
     .card-primary { border-color: #d4e6e4; }
-
     footer {
       border-top: 1px solid #e0d5ca;
       padding: 1.5rem 1rem 2rem;
@@ -199,57 +151,99 @@
       <div>
         <span class="pill">Inizia da qui</span>
         <h1>La tua pelle è cambiata. La tua skincare può cambiare con lei.</h1>
-        <p>
-          Se ti sembra che la pelle sia più secca, meno luminosa e le creme "di sempre" non bastino più, sei nel posto giusto.
-        </p>
-        <p>
-          Qui raccogliamo consigli pratici pensati per donne dai 45 ai 70 anni: pochi prodotti scelti bene, spiegati in italiano chiaro, per aiutarti a costruire una routine che ti assomiglia davvero.
-        </p>
+        <p>Se ti sembra che la pelle sia più secca, meno luminosa e le creme "di sempre" non bastino più, sei nel posto giusto.</p>
+        <p>Qui raccogliamo consigli pratici pensati per donne dai 45 ai 70 anni: pochi prodotti scelti bene, spiegati in italiano chiaro, per aiutarti a costruire una routine che ti assomiglia davvero.</p>
         <a class="btn-primary" href="articolo-1-routine-45-60.html">Leggi subito la routine base<span>→</span></a>
       </div>
       <div class="hero-img-wrapper">
-        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/52fe8f94-3f6d-4cad-90ec-cf7409afddf1.png" alt="Donna sui 50 anni che applica serenamente una crema viso vicino a una finestra" loading="lazy" />
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/52fe8f94-3f6d-4cad-90ec-cf7409afddf1.png" alt="Donna sui 50 anni che applica serenamente una crema viso vicino a una finestra" loading="lazy" width="600" height="600" />
       </div>
     </section>
 
     <section id="articoli">
-      <h2>Articoli consigliati per iniziare</h2>
+      <p class="section-title">Tutti gli articoli</p>
       <div class="grid">
+
         <article class="card card-primary">
-          <span class="meta">Guida pratica · Lettura 7 minuti</span>
+          <span class="meta">Guida pratica · 7 min</span>
+          <span class="autrice">Carla</span>
           <h2>Routine viso mattina e sera 45–60 anni: la base minima che funziona</h2>
-          <p>
-            Dimentica i dieci passaggi e i prodotti che finiscono in un cassetto. Qui trovi una routine essenziale, con pochi step che puoi davvero seguire tutti i giorni.
-          </p>
-          <a class="more" href="articolo-1-routine-45-60.html">Leggi la guida completa →</a>
+          <p>Dimentica i dieci passaggi. Una routine essenziale con pochi step che puoi davvero seguire ogni giorno.</p>
+          <a class="more" href="articolo-1-routine-45-60.html">Leggi →</a>
         </article>
 
         <article class="card">
-          <span class="meta">Focus ingredienti · Lettura 8 minuti</span>
+          <span class="meta">Focus ingredienti · 8 min</span>
+          <span class="autrice">Marina</span>
           <h2>Ingredienti da cercare (e da evitare) dopo i 50 anni</h2>
-          <p>
-            Acido ialuronico, retinolo, vitamina C, niacinamide: cosa fanno davvero, come inserirli nella routine e quando non ha senso usarli.
-          </p>
-          <a class="more" href="articolo-2-ingredienti-dopo-50.html">Scopri gli ingredienti chiave →</a>
+          <p>Acido ialuronico, retinolo, vitamina C, niacinamide: cosa fanno davvero e come inserirli nella routine.</p>
+          <a class="more" href="articolo-2-ingredienti-dopo-50.html">Leggi →</a>
         </article>
 
         <article class="card">
-          <span class="meta">Guida scelta prodotti · Lettura 6 minuti</span>
+          <span class="meta">Guida prodotti · 6 min</span>
+          <span class="autrice">Marina</span>
           <h2>Creme giorno con protezione solare: il tuo primo "antiage"</h2>
-          <p>
-            Il sole è tra i principali responsabili di rughe e macchie. Vediamo come scegliere una buona crema con SPF che useresti davvero ogni mattina.
-          </p>
-          <a class="more" href="articolo-3-creme-con-spf.html">Come scegliere la crema giusta →</a>
+          <p>Il sole è tra i principali responsabili di rughe e macchie. Come scegliere una crema con SPF che useresti davvero.</p>
+          <a class="more" href="articolo-3-creme-con-spf.html">Leggi →</a>
         </article>
 
         <article class="card">
-          <span class="meta">Routine pronte · Lettura 5 minuti</span>
+          <span class="meta">Routine pronte · 5 min</span>
+          <span class="autrice">Carla</span>
           <h2>3 routine pronte: budget, essenziale, coccola</h2>
-          <p>
-            Tre esempi di routine complete con numero diverso di prodotti, pensate per esigenze e budget diversi: scegli quella che ti assomiglia di più.
-          </p>
-          <a class="more" href="articolo-4-tre-routine-pronte.html">Vedi le routine esempio →</a>
+          <p>Tre esempi completi con prodotti diversi, per esigenze e budget diversi. Scegli quella che ti assomiglia.</p>
+          <a class="more" href="articolo-4-tre-routine-pronte.html">Leggi →</a>
         </article>
+
+        <article class="card">
+          <span class="meta">Guida pratica · 6 min</span>
+          <span class="autrice">Carla</span>
+          <h2>Skincare dopo i 60: cosa cambiare rispetto ai 50</h2>
+          <p>Non serve stravolgere tutto. Ma qualcosa va aggiustato: pelle più sottile, più secca, meno tollerante. Ecco cosa.</p>
+          <a class="more" href="articolo-5-skincare-dopo-60.html">Leggi →</a>
+        </article>
+
+        <article class="card">
+          <span class="meta">Approfondimento · 7 min</span>
+          <span class="autrice">Marina</span>
+          <h2>Macchie scure sulla pelle dopo i 50: da dove vengono e come trattarle</h2>
+          <p>Iperpigmentazione, lentigini solari, melasma: capire la causa è il primo passo per trattarle nel modo giusto.</p>
+          <a class="more" href="articolo-6-macchie-scure.html">Leggi →</a>
+        </article>
+
+        <article class="card">
+          <span class="meta">Guida pratica · 6 min</span>
+          <span class="autrice">Carla</span>
+          <h2>Occhiaie e borse sotto gli occhi: cosa funziona davvero dopo i 45</h2>
+          <p>Borse e occhiaie sono due problemi diversi. Quello che funziona per uno può non funzionare per l'altro.</p>
+          <a class="more" href="articolo-7-occhiaie-borse.html">Leggi →</a>
+        </article>
+
+        <article class="card">
+          <span class="meta">Guida pratica · 7 min</span>
+          <span class="autrice">Marina</span>
+          <h2>Come leggere l'etichetta di una crema viso senza perdersi</h2>
+          <p>INCI, parabeni, profumo, comedogeno: poche regole per orientarti e fare scelte più consapevoli.</p>
+          <a class="more" href="articolo-8-leggere-etichette.html">Leggi →</a>
+        </article>
+
+        <article class="card">
+          <span class="meta">Approfondimento · 7 min</span>
+          <span class="autrice">Marina</span>
+          <h2>Pelle sensibile dopo la menopausa: come gestirla senza impazzire</h2>
+          <p>Il calo degli estrogeni cambia la pelle. Più secca, più reattiva, più sottile. Cosa fare e cosa evitare.</p>
+          <a class="more" href="articolo-9-pelle-sensibile-menopausa.html">Leggi →</a>
+        </article>
+
+        <article class="card">
+          <span class="meta">Guida pratica · 5 min</span>
+          <span class="autrice">Carla</span>
+          <h2>Routine skincare minima: 3 prodotti, 5 minuti, risultati veri</h2>
+          <p>Non hai tempo per routine lunghe? Con tre prodotti giusti e cinque minuti al giorno ottieni tutto quello che ti serve.</p>
+          <a class="more" href="articolo-10-routine-3-prodotti.html">Leggi →</a>
+        </article>
+
       </div>
     </section>
   </main>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pelleserena.pages.dev/sitemap.xml
